@@ -35,11 +35,9 @@ We have provided a list of deliverables which you can use to demonstrate how you
 # Contact & Help
 If you need to contact Finch regarding this task, please use the details below:
 
-Email: finch@podium.zone
-
+Email: finch@podium.zone  
 WhatsApp Text Message (for faster response): +44 7949 794298
 
 If you can't get through to Finch, try Mike:
-Email: mike@podium.zone
-
+Email: mike@podium.zone  
 WhatsApp Text Message: +1 408 878 5818
