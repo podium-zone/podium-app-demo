@@ -1,82 +1,20 @@
-# Ionic Angular Conference Application
+# Podium App Demonstration Task
+The goal of this task is to provide your effort to this repository via a pull request from your own feature branch.  You will find the visual designs in the `/visual-designs` directory of this repository.
 
-This application is purely a kitchen-sink demo of the Ionic Framework and Angular.
+**Please note** this task is set to allow you to demonstrate your front-end UI building skills and knowledge, there is absolutely no requirement for any data to be real.  **All** data items, and user-login authentication can be served from a faked provider-service.
 
-**There is not an actual Ionic Conference at this time.** This project is just to show off Ionic components in a real-world application. Please go through the steps in [CONTRIBUTING](https://github.com/ionic-team/ionic-conference-app/blob/master/.github/CONTRIBUTING.md) before submitting an issue.
+**Please note** it is not 100% required that your demonstation app be written using Angular.  If you feel you can achieve a more impressive result using React then please do so.  The resulting code you commit to this repository **must** produce, at least, a valid Android Studio project which runs in its default simulator.  Bonus points for a working iOS version however this is not expected or encouraged that you commit any significant amount of time to iOS.
 
+## Expected deliverables
+Provide examples of the following screens; 
+* Application startup splash screen ending in a welcome-page screen if no current authenticated user
+* Application startup splash screen ending in the currently authenticated user being sent to a app-page behind an authorisation route-guard.
 
-## Table of Contents
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [App Preview](#app-preview)
-- [Deploying](#deploying)
-  - [Progressive Web App](#progressive-web-app)
-  - [Android](#android)
-  - [iOS](#ios)
+* The main-menu Podium screen as seen in the concept document.
+* The community feed screen, viewable on pg5 of the `./visual-designs/concept.pdf` document.
+* A 'styleguide' page, accessible only by authenticated users, which demonstrates the visual elements detailed in `./visual-designs/style guide.png`
 
-
-## Getting Started
-
-* [Download the installer](https://nodejs.org/) for Node LTS.
-* Install the ionic CLI globally: `npm install -g ionic`
-* Clone this repository: `git clone https://github.com/ionic-team/ionic-conference-app.git`.
-* Run `npm install` from the project root.
-* Run `ionic serve` in a terminal from the project root.
-* Profit. :tada:
-
-_Note: See [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-started/fixing-npm-permissions) if you are running into issues when trying to install packages globally._
-
-## Contributing
-
-See [CONTRIBUTING.md](https://github.com/ionic-team/ionic-conference-app/blob/master/.github/CONTRIBUTING.md) :tada::+1:
-
-
-## App Preview
-
-### [Menu](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/menu/menu.html)
-
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Menu](/resources/screenshots/android-menu.png) | ![iOS Menu](/resources/screenshots/ios-menu.png) |
-
-
-### [Schedule Page](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/schedule/schedule.html)
-
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Schedule](/resources/screenshots/android-schedule.png) | ![iOS Schedule](/resources/screenshots/ios-schedule.png) |
-
-### [Speakers Page](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/speaker-list/speaker-list.html)
-
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Speakers](/resources/screenshots/android-speakers.png) | ![iOS Speakers](/resources/screenshots/ios-speakers.png) |
-
-### [Speaker Detail Page](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/speaker-detail/speaker-detail.html)
-
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Speaker Detail](/resources/screenshots/android-speaker-detail.png) | ![iOS Speaker Detail](/resources/screenshots/ios-speaker-detail.png) |
-
-### [About Page](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/about/about.html)
-
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android About](/resources/screenshots/android-about.png) | ![iOS About](/resources/screenshots/ios-about.png) |
-
-
-## Deploying
-
-### Progressive Web App
-
-1. Un-comment [these lines](https://github.com/ionic-team/ionic2-app-base/blob/master/src/index.html#L21)
-2. Run `npm run ionic:build --prod`
-3. Push the `www` folder to your hosting service
-
-### Android
-
-1. Run `ionic cordova run android --prod`
-
-### iOS
-
-1. Run `ionic cordova run ios --prod`
+## Optional deliverables (viewable from `./visual-designs/Tribe Management and Calendar.pdf`)
+* Tribe list screen.
+* Tribe details screen.
+* Calendar UI screen.
