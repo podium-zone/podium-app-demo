@@ -1,7 +1,7 @@
 # Podium App Demonstration Task
 The goal of this task is to provide your effort to this repository via a pull request from your own feature branch.  You will find the visual designs in the `/visual-designs` directory of this repository.
 
-**Please note** this task is set to allow you to demonstrate your front-end UI building skills and knowledge, there is absolutely no requirement for any data to be real.  **All** data items can be served from a faked provider-service.
+**Please note** this task is set to allow you to demonstrate your front-end UI building skills and knowledge, there is absolutely no requirement for any data to be real.  **All** data items, and user-login authentication can be served from a faked provider-service.
 
 **Please note** it is not 100% required that your demonstation app be written using Angular.  If you feel you can achieve a more impressive result using React then please do so.  The resulting code you commit to this repository **must** produce, at least, a valid Android Studio project which runs in its default simulator.  Bonus points for a working iOS version however this is not expected or encouraged that you commit any significant amount of time to iOS.
 
