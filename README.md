@@ -14,9 +14,10 @@ We have provided a list of deliverables which you can use to demonstrate how you
 
 ## Notes
 * Provide your effort to this repository via a pull request from your own feature branch.
-* You will find all resources for the deliverables provided in the `/visual-designs` directory of this repository.
+* You will find all visual designs for these deliverables are provided in the `./visual-designs` directory of this repository.
+* All visual assets (such as custom icons, backgrounds, and SVG's) are already loaded into this repository at ./src/assets/podium-icons.
 * This task allows you to demonstrate your front-end UI building skills and knowledge, there is absolutely no requirement for any data to be real. **All** data items, and user-login authentication can be served from a faked provider-service.
-* It is not 100% required that your demonstation app be written using Angular.  If you feel you can achieve a more impressive result using React then please do so. The resulting code you commit to this repository **must** produce, at least, a valid Android Studio **or** iOS XCode project which runs in its default simulator.
+* It is not 100% required that your demonstation app be written using Angular.  If you feel you can achieve a more impressive result using Ionic-React then please do so. The resulting code you commit to this repository **must** produce, at least, a valid Android Studio **or** iOS XCode project which runs in its default simulator.
 
 
 # Deliverables
@@ -33,7 +34,7 @@ We have provided a list of deliverables which you can use to demonstrate how you
 
 
 # Contact & Help
-If you need to contact Finch regarding this task, please use the details below:
+Please do not hesitate to contact Finch regarding this task if required.
 
 Email: finch@podium.zone  
 WhatsApp Text Message (for faster response): +44 7949 794298
