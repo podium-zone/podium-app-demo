@@ -1,0 +1,20 @@
+::ng-deep.mat-calendar-body-selected {
+  color: red !important;
+}
+
+::ng-deep.mat-calendar-body-label {
+  display: none;
+}
+
+::ng-deep.mat-calendar-body-cell-content {
+  border: none !important;
+}
+
+::ng-deep.available-date {
+  font-weight: 700;
+  color: orange !important;
+}
+
+::ng-deep.disabled-date {
+  color: darkgray !important;
+}

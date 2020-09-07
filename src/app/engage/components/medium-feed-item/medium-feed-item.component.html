@@ -1,0 +1,10 @@
+<div class="bg"></div>
+<div class="content" [style.background-image]="backgroundUrl">
+  <img
+    *ngIf="post.titleImageUrl"
+    class="image-title"
+    [src]="post.titleImageUrl"
+  />
+  <span *ngIf="!post.titleImageUrl" class="title">{{ post.title }}</span>
+  <span class="subtitle">{{ post.subtitle }}</span>
+</div>

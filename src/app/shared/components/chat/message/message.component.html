@@ -1,0 +1,68 @@
+<div class="message-container">
+  <ion-grid>
+    <ion-row>
+      <ion-col [size]="1">
+        <img class="avatar" src="./assets/img/avatar.jpeg" />
+      </ion-col>
+      <ion-col (click)="toggleReply()">
+        <p class="author">{{ message.author }}</p>
+        <h3 class="content">{{ message.content }}</h3>
+        <p class="date-since">{{ message.date | daysSince }}</p>
+      </ion-col>
+      <ion-col class="like-container" [size]="2">
+        <span>{{ message.likes }}</span>
+        <div class="like-actions">
+          <button
+            class="like-button"
+            [disabled]="message.disabled"
+            (click)="unlike(message.id)"
+          >
+            <img
+              *ngIf="message.liked"
+              class="like-button"
+              height="16"
+              src="/assets/podium-icons/podium-icon-upvote-filled.svg"
+              alt="Like sended"
+            />
+          </button>
+          <button
+            *ngIf="!message.liked"
+            class="like-button"
+            [disabled]="message.disabled"
+            (click)="like(message.id)"
+          >
+            <img
+              height="16"
+              src="/assets/podium-icons/podium-icon-upvote-outline.svg"
+              alt="Send like"
+            />
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="showReply$ | async">
+      <ion-col [offset]="1">
+        <form [formGroup]="form" (submit)="send()">
+          <div class="input-wrapper">
+            <ion-input
+              formControlName="reply"
+              placeholder="SEND REPLY"
+            ></ion-input>
+            <button class="send-button" type="submit" [disabled]="form.invalid">
+              <img
+                height="20"
+                src="/assets/podium-icons/podium-icon-arrow-right.svg"
+                alt="Send comment"
+              />
+            </button>
+          </div>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <comment
+    *ngFor="let comment of message.replies"
+    [comment]="comment"
+  ></comment>
+</div>

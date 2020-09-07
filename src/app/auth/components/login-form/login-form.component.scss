@@ -1,0 +1,51 @@
+:host {
+  display: block;
+}
+
+.slide-image {
+  height: 200px;
+  max-width: 30%;
+  margin: 36px 0;
+  pointer-events: none;
+  filter: invert(1);
+}
+
+p {
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ion-color-step-600, #60646b);
+
+  b {
+    color: var(--ion-text-color, #000000);
+  }
+}
+
+.input-wrapper {
+  ion-input {
+    background-color: lightgray;
+    color: gray;
+    margin: 0 16px;
+    width: auto;
+    margin: 0;
+    border-radius: 10px;
+    ::ng-deep input {
+      padding-left: 16px !important;
+    }
+  }
+
+  .error-container {
+    min-height: 24px;
+  }
+
+  small {
+    color: --ion-color-warning;
+  }
+}
+
+ion-button {
+  margin: 0;
+  width: 100%;
+  --background: #282828;
+  --border-radius: 0;
+}

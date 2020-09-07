@@ -1,0 +1,67 @@
+@import '../../../../theme/variables';
+
+:host {
+  display: block;
+  position: relative;
+  color: var(--ion-text-color);
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+
+  background: url(/assets/podium-icons/black-polygon-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: left;
+}
+
+.content {
+  width: 100%;
+  height: 200px;
+
+  border: 1px solid black;
+  border-bottom: 16px solid #333334;
+
+  display: flex;
+  flex-direction: column;
+
+  background-size: cover;
+
+  padding-top: 3rem;
+  padding-left: 5rem;
+
+  .top {
+    flex: 1;
+  }
+
+  .image-title {
+    filter: invert(1);
+    width: 70%;
+  }
+
+  .author,
+  .title,
+  .subtitle {
+    z-index: 10;
+    color: inherit;
+    text-decoration: none;
+    color: white;
+    // background: rgba(0, 0, 0, 0.3);
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}

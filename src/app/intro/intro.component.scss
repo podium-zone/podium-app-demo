@@ -1,0 +1,42 @@
+ion-slides {
+  height: 100%;
+}
+
+ion-slide {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slide-title {
+  margin-top: 2.8rem;
+}
+
+.slide-image {
+  max-width: 50%;
+  margin: 36px 0;
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+.podium-logo {
+  max-width: 15%;
+  margin: 36px 0;
+  pointer-events: none;
+  filter: invert(1);
+}
+
+ion-button {
+  margin: 0;
+  --background: #282828;
+  --border-radius: 0;
+}
+
+::ng-deep.swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+
+::ng-deep.swiper-pagination-bullet {
+  background-color: lightgray;
+}

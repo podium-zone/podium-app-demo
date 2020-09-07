@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <button *ngIf="showBackButton$ | async" class="back-button" (click)="goBack()">
+        <img
+          class="podium-icon-white"
+          height="30"
+          src="/assets/podium-icons/podium-icon-arrow-left.svg"
+          alt="Go back"
+        />
+      </button>
+    </ion-buttons>
+    <ion-title>
+      <button class="podium-button" (click)="toggleMenu()">
+        <img class="podium-icon-white" height="50" src="/assets/podium-icons/podium-icon-motif.svg" alt="Podium Logo" />
+      </button>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-badge *ngIf="notificationCount" color="danger">{{ notificationCount }}</ion-badge>
+        <ion-icon class="notification-icon" src="assets/podium-icons/podium-icon-notification.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-list class="dropdown" [@showDropdown]="dropdownState$ | async">
+    <ion-item
+      class="ion-no-padding"
+      routerLink="/engage"
+      routerDirection="forward"
+      (click)="toggleMenu()"
+      [detail]="false"
+      ><ion-label>ENGAGE</ion-label></ion-item
+    >
+    <ion-item
+      class="ion-no-padding"
+      routerLink="/tribe"
+      routerDirection="forward"
+      (click)="toggleMenu()"
+      [detail]="false"
+      ><ion-label>TRIBES</ion-label></ion-item
+    >
+    <ion-item class="ion-no-padding" routerLink (click)="toggleMenu()"><ion-label>STYLE GUIDE</ion-label></ion-item>
+    <ion-item class="ion-no-padding" routerLink (click)="toggleMenu()"><ion-label>MY PROFILE</ion-label></ion-item>
+    <ion-item class="ion-no-padding" routerLink="/auth/logout" replaceUrl="true"
+      ><ion-label>LOGOUT</ion-label></ion-item
+    >
+  </ion-list>
+</ion-header>

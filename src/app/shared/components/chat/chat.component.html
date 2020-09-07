@@ -1,0 +1,19 @@
+<div class="chat-container">
+  <h1 class="title">TRIBE CHAT</h1>
+  <ion-button expand="full">SHOW OLDER MESSAGES</ion-button>
+  <div class="messages-container">
+    <message *ngFor="let comment of comments$ | async" [message]="comment"></message>
+  </div>
+  <form [formGroup]="form" (submit)="send()">
+    <div class="input-wrapper">
+      <ion-input formControlName="comment" placeholder="SEND MESSAGE"></ion-input>
+      <button class="send-button" type="submit" [disabled]="form.invalid">
+        <img
+          height="20"
+          src="/assets/podium-icons/podium-icon-arrow-right.svg"
+          alt="Send comment"
+        />
+      </button>
+    </div>
+  </form>
+</div>

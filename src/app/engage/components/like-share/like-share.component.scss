@@ -1,0 +1,10 @@
+.like-share-container {
+  display: flex;
+  margin: 32px 0;
+  ion-button {
+    margin: 0;
+    width: 100%;
+    --background: #282828;
+    --border-radius: 0;
+  }
+}

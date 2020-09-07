@@ -1,0 +1,26 @@
+ion-button {
+  margin: 0;
+  width: 100%;
+  --background: #282828;
+  --border-radius: 0;
+}
+
+.podium-button {
+  color: darkgray;
+  margin-bottom: 16px;
+  span {
+    margin-right: 16px;
+  }
+  img {
+    filter: invert(1);
+  }
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,20 @@
+<ion-content
+  ><h2 class="title">YOUR TRIBES</h2>
+  <ion-button class="podium-button" expand="full"><span>CREATE TRIBE</span> </ion-button>
+  <ion-button class="podium-button" expand="full">
+    <img height="15" src="/assets/podium-icons/podium-icon-plus-circle.svg" alt="Enable edit" /><span
+      >SEND FLARE</span
+    ></ion-button
+  >
+  <ion-list>
+    <ng-container *ngFor="let tribe of tribes$ | async">
+      <a routerLink="1" routerDirection="forward">
+        <tribe-list-item [tribe]="tribe"></tribe-list-item>
+      </a>
+    </ng-container>
+  </ion-list>
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="onInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="crescent"> </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

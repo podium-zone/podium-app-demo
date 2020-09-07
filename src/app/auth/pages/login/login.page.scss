@@ -1,0 +1,15 @@
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    height: 200px;
+    max-width: 30%;
+    margin: 36px 0;
+    pointer-events: none;
+    filter: invert(1);
+  }
+}

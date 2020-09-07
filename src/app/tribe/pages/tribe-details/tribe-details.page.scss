@@ -1,0 +1,51 @@
+ion-content {
+  margin-top: 16px;
+}
+
+ion-button {
+  margin: 0;
+  width: 100%;
+  --background: #282828;
+  --border-radius: 0;
+}
+
+.tribe-menu-button {
+  background: transparent;
+  position: relative;
+  margin-left: 90%;
+  margin-top: 10px;
+  right: 0 !important;
+}
+
+.set-availability-button {
+  color: darkgray;
+  margin-bottom: 32px;
+  span {
+    margin-right: 16px;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.tribe-info {
+  padding: 16px;
+  h3 {
+    font-weight: 300;
+    margin-top: 0;
+  }
+  .visibility {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.calendar-title {
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid lightgray;
+  padding-top: 32px;
+}

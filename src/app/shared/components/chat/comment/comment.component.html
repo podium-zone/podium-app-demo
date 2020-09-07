@@ -1,0 +1,44 @@
+<div class="comment-container">
+  <ion-grid>
+    <ion-row>
+      <ion-col [size]="1" [offset]="1">
+        <img class="avatar" src="./assets/img/avatar.jpeg" />
+      </ion-col>
+      <ion-col>
+        <p class="author">{{ comment.author }}</p>
+        <h3 class="content">{{ comment.content }}</h3>
+        <p class="date-since">{{ comment.date | daysSince }}</p>
+      </ion-col>
+      <ion-col class="like-container" [size]="2">
+        <span>{{ comment.likes }}</span>
+        <div class="like-actions">
+          <button
+            class="like-button"
+            [disabled]="comment.disabled"
+            (click)="unlike(comment.id)"
+          >
+            <img
+              *ngIf="comment.liked"
+              class="like-button"
+              height="16"
+              src="/assets/podium-icons/podium-icon-upvote-filled.svg"
+              alt="Send comment"
+            />
+          </button>
+          <button
+            *ngIf="!comment.liked"
+            class="like-button"
+            [disabled]="comment.disabled"
+            (click)="like(comment.id)"
+          >
+            <img
+              height="16"
+              src="/assets/podium-icons/podium-icon-upvote-outline.svg"
+              alt="Send comment"
+            />
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

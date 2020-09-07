@@ -1,0 +1,31 @@
+.title {
+  text-align: center;
+  border-top: 1px solid lightgray;
+  padding: 32px;
+}
+
+ion-button {
+  margin: 0;
+  width: 100%;
+  --background: #282828;
+  --border-radius: 0;
+}
+
+.input-wrapper {
+  display: flex;
+  ion-input {
+    background-color: lightgray;
+    color: gray;
+    margin: 16px;
+    width: auto;
+    border-radius: 10px;
+    ::ng-deep input {
+      padding-left: 16px !important;
+    }
+  }
+
+  .send-button {
+    filter: invert(1);
+    margin-right: 16px;
+  }
+}
