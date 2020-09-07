@@ -1,0 +1,28 @@
+<form [formGroup]="loginForm" (ngSubmit)="tryLogin()">
+  <div class="input-wrapper">
+    <ion-input autofocus formControlName="email" type="email" placeholder="Email"></ion-input>
+    <div class="error-container">
+      <small
+        *ngIf="
+          loginForm.controls.email.dirty &&
+          (loginForm.controls.email.errors?.email || loginForm.controls.email.errors?.required)
+        "
+      >
+        Please provide a valid email
+      </small>
+    </div>
+  </div>
+  <div class="input-wrapper">
+    <ion-input formControlName="password" type="password" placeholder="Password"></ion-input>
+    <div class="error-container">
+      <small *ngIf="loginForm.controls.password.dirty && loginForm.controls.password.errors?.required">
+        Please provide a valid password
+      </small>
+      <small *ngIf="loginForm.controls.password.dirty && loginForm.controls.password.errors?.minlength">
+        Password is too short
+      </small>
+    </div>
+  </div>
+  <input type="submit" hidden />
+  <ion-button type="submit">LOGIN</ion-button>
+</form>

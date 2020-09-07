@@ -1,0 +1,10 @@
+<ion-content *ngIf="postContent$ | async as postContent">
+  <div class="content-container">
+    <h1 class="title">{{postContent.title}}</h1>
+    <h5 class="author">{{postContent.author}}</h5>
+    <img [src]="backgroundUrl" />
+    <p class="content">{{postContent.content}}</p>
+  </div>
+  <like-share [likes]="postContent.likes"></like-share>
+  <chat [comments]="postContent.comments"></chat>
+</ion-content>

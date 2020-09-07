@@ -1,0 +1,30 @@
+.comment-container {
+  .author {
+    margin: 0;
+    color: darkgray;
+  }
+  .content {
+    margin: 0;
+  }
+
+  .date-since {
+    margin: 0;
+    color: darkgray;
+    font-size: 12px;
+  }
+
+  .avatar {
+    width: 32px;
+    border-radius: 100%;
+  }
+
+  .like-container {
+    display: flex;
+    .like-button {
+      background: transparent;
+      color: white;
+      padding: 0;
+      margin-left: 4px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<ion-content>
+  <ion-list>
+    <ng-container *ngFor="let post of posts$ | async">
+      <a [routerLink]="'post/' + post.id" routerDirection="forward">
+        <large-feed-item
+          *ngIf="post.category === 'LARGE'"
+          [post]="post"
+        ></large-feed-item>
+        <medium-feed-item
+          *ngIf="post.category === 'MEDIUM'"
+          [post]="post"
+        ></medium-feed-item>
+      </a>
+    </ng-container>
+  </ion-list>
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="onInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="crescent">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

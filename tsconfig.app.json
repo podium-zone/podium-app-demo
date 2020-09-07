@@ -1,14 +1,10 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/app",
-    "types": []
+    "outDir": "../out-tsc/app",
+    "module": "es2020",
+    "types": ["node"]
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "src/test.ts",
-    "src/**/*.spec.ts"
-  ]
+  "files": ["src/main.ts", "src/polyfills.ts"],
+  "exclude": ["src/test.ts", "**/*.spec.ts"]
 }

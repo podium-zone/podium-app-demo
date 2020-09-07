@@ -1,0 +1,35 @@
+.title {
+  text-align: center;
+  padding: 32px;
+  border-top: 1px solid lightgray;
+}
+
+.member-container {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  .avatar {
+    width: 32px;
+    margin-right: 16px;
+    border-radius: 100%;
+  }
+}
+
+::ng-deep.item-inner {
+  border: none;
+}
+
+.share-invite-container {
+  display: flex;
+  margin-bottom: 32px;
+  ion-button {
+    margin: 0;
+    width: 100%;
+    --background: #282828;
+    --border-radius: 0;
+  }
+  img {
+    margin-left: 8px;
+    filter: invert(1);
+  }
+}

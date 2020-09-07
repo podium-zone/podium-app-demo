@@ -1,0 +1,32 @@
+<ion-menu side="end" menuId="tribe-details-menu" contentId="tribeDetailsContent">
+  <ion-list>
+    <ion-item (click)="closeMenu()">EDIT SETTINGS</ion-item>
+    <ion-item (click)="closeMenu()">CHANGE ADMIN</ion-item>
+    <ion-item (click)="closeMenu()">LEAVE TRIBE</ion-item>
+    <ion-item (click)="closeMenu()">DELETE TRIBE</ion-item>
+  </ion-list>
+</ion-menu>
+<ion-content id="tribeDetailsContent">
+  <button class="tribe-menu-button" (click)="openMenu()">
+    <img class="podium-icon-white" height="15" src="/assets/podium-icons/podium-icon-burger.svg" alt="Open menu" />
+  </button>
+  <h1 class="title">RAIN RIDERS TRIBE</h1>
+  <img [src]="backgroundUrl" />
+  <div class="tribe-info">
+    <h4 style="width: 100%">Type</h4>
+    <tribe-category [height]="15" category="RIDE" alt="Tribe text"></tribe-category>
+    <div class="visibility">
+      <h4>Visibility</h4>
+      <img height="15" src="/assets/podium-icons/podium-icon-pen.svg" alt="Enable edit" />
+    </div>
+    <h3>PUBLIC</h3>
+  </div>
+  <h2 class="calendar-title">SESSION</h2>
+  <calendar [editMode]="editMode$ | async"></calendar>
+  <ion-button class="set-availability-button" expand="full" (click)="toggleEditMode()"
+    ><span>SET YOUR AVAILABILITY</span>
+    <img height="15" src="/assets/podium-icons/podium-icon-pen.svg" alt="Enable edit"
+  /></ion-button>
+  <members [members]="members$ | async"></members>
+  <chat [comments]="(chatContent$ | async)"></chat>
+</ion-content>

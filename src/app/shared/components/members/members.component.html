@@ -1,0 +1,17 @@
+<h2 class="title">TRIBE MEMBERS</h2>
+<div class="share-invite-container">
+  <ion-button expand="block">Share</ion-button>
+  <ion-button expand="block"
+    ><span>Invite</span>
+    <img
+      class="podium-icon-white"
+      height="30"
+      src="/assets/podium-icons/podium-icon-motif.svg"
+      alt="Podium Logo"
+  /></ion-button>
+</div>
+<ion-list>
+  <ion-label class="member-container" *ngFor="let member of members"
+    ><img class="avatar" src="./assets/img/avatar.jpeg" />{{ member }}</ion-label
+  >
+</ion-list>
